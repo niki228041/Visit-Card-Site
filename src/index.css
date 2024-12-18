@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: monocode;
+  src: url('./font/monocode-regular.ttf');
+}
+
+@font-face {
+  font-family: monocode_semibold;
+  src: url('./font/monocode-semibold.ttf');
+}
