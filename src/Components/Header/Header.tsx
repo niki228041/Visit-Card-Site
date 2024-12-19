@@ -24,7 +24,7 @@ const Header =()=> {
 
   return (
     <div className="w-full bg-black py-10   " >
-      <div className=' px-96 mx-40 flex '>
+      <div className=' 2xl:px-96  mx-10 xl:mx-40 flex '>
         <div className='w-full'>
             <div>
               <span className=' text-white text-6xl font-monocode_semibold'>Nikita-Zigfrid Lopocz </span>
