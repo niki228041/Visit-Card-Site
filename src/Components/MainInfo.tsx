@@ -3,29 +3,77 @@ import "../index.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
+import inst from '../img/icons8-instagram.svg'
+import linked from '../img/icons8-linkedin.svg'
+import git from '../img/icons8-github.svg'
+
 const MainInfo =()=> {
 
+    function openInNewTab(url:string) {
+        window.open(url, "_blank");
+    }
+
   return (
-    <div className="w-full flex-row place-content-between  grid grid-cols-2 " >
-        <div className='font-monocode   w-full text-2xl pt-20 px-60'>
-            Hi there,
-            <div className='' />
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            <div className='py-5' />
-            It has <span className=' text-blue-500 font-monocode_semibold hover:text-blue-900 transition-all cursor-pointer'>survived</span> not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div className="w-full flex-row place-content-between  px-96 pt-16" >
+        <div className=' mx-40 grid  xl:grid-cols-2 rounded-l'>
+        <div className='font-monocode   w-full text-xl mr-10 mb-10'>
+
+        Hi!
+        <div className='mt-8'></div>
+         My name is Nikita, and I’m a Front/Backend Developer.
+        <div className='mt-8'></div>
+
+        I specialize in <span className=' font-monocode_semibold'>React</span>, <span className=' font-monocode_semibold'>TypeScript</span>, <span className=' font-monocode_semibold'>C#</span> for backend development, <span className=' font-monocode_semibold'>Tailwind CSS</span> , and various Node.js libraries. 
+        <div className='mt-8'></div>
+         
+        Also I have knowledge in Photoshop, Blender and Figma. I like to make everything perfectly and like to learn new stuff.
+        <div className='mt-8'></div>
+
+        When I’m not coding, you’ll find me in my <span className=' text-blue-500 font-monocode_semibold hover:text-blue-900 transition-all cursor-pointer'>socials</span> on the right.
+
 
         </div>
-        <div className='  p-10  pt-20 '>
-            <div className=''>
-                <p className='text-center text-2xl font-monocode_semibold'>Socials</p>
-                <p className='  text-center  text-xl font-monocode transition-all hover:text-gray-400 cursor-pointer mt-5'>Socials</p>
-                <p className='  text-center text-xl font-monocode transition-all hover:text-gray-400 cursor-pointer'>Socials</p>
+        <div className='  ml-10'>
+            <div className='grid'>
+                <div className='flex justify-end'>
+                    <span className='text-center text-xl font-monocode_semibold bg-black py-1 text-white px-10 shadow-3xl shadow-gray-400'>Socials</span>
+                    
+                </div>
+                <div className='flex justify-end'>
+                    <div onClick={()=>{openInNewTab("https://www.instagram.com/uishjro")}} className='flex justify-end mt-5 transition-all hover:text-red-400 cursor-pointer'>
+                        <span className='  text-center  text-l font-monocode  py-1 my-1'>Instagram</span>
+                        <img className=' self-center h-6 ml-1' src={inst} />
+                    </div>
+                </div>
+                <div className='flex justify-end'>
+                    <div onClick={()=>{openInNewTab("https://www.linkedin.com/in/nikita-lopocz-a0a986269")}} className='flex justify-end transition-all hover:text-blue-400 cursor-pointer'>
+                        <span className='  text-center  text-l font-monocode  py-1 my-1'>LinkedIn</span>
+                        <img className=' self-center h-6 ml-1' src={linked} />
+
+                    </div>
+                </div>
+                <div className='flex justify-end'>
+                    <div onClick={()=>{openInNewTab("https://github.com/niki228041")}} className='flex justify-end transition-all hover:text-gray-400 cursor-pointer'>
+                        <span className='  text-center  text-l font-monocode  py-1 my-1'>GitHub</span>
+                        <img className=' self-center h-6 ml-1' src={git} />
+                    </div>
+                </div>
             </div>
-            <div className='mt-5'>
-                <p className=' text-center text-2xl font-monocode_semibold'>Socials</p>
-                <p className='  text-center  text-xl font-monocode transition-all hover:text-gray-400 cursor-pointer mt-5'>Socials</p>
-                <p className='  text-center text-xl font-monocode transition-all hover:text-gray-400 cursor-pointer'>Socials</p>
-            </div>
+            {/* <div className='grid mt-5'>
+                <div className='flex justify-end'>
+                    <span className='text-center text-xl font-monocode_semibold bg-black py-1 text-white px-10 shadow-3xl shadow-gray-400'>Projects</span>
+                </div>
+                <div className='flex justify-end mt-5'>
+                    <span className='  text-center  text-l font-monocode transition-all  hover:text-gray-400 cursor-pointer py-1 my-1'>TodoList.com</span>
+                </div>
+                <div className='flex justify-end'>
+                    <span className='  text-center  text-l font-monocode transition-all hover:text-gray-400 cursor-pointer py-1 my-1'>MarketClone.com</span>
+                </div>
+                <div className='flex justify-end'>
+                    <span className='  text-center  text-l font-monocode transition-all hover:text-gray-400 cursor-pointer py-1 my-1'>site.com</span>
+                </div>
+            </div> */}
+        </div>
         </div>
     </div>
   )

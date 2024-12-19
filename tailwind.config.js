@@ -9,6 +9,9 @@ module.exports = {
         'monocode': ['monocode', 'monospace'], // Add custom font to Tailwind
         'monocode_semibold': ['monocode_semibold', 'sans-serif'], // Add custom semibold font
       },
+      boxShadow: {
+        '3xl': '8px 8px 0px 0px rgba(0, 0, 0, 1)',
+      }
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ const App=()=>{
         <BrowserRouter>
         <Routes>
             <Route path='/*' element={<>
-              <div className='flex flex-col ' style={{minHeight:"100vh"}}>
+              <div className='flex flex-col  ' style={{minHeight:"100vh"}}>
                 <Header />
                 <MainInfo/>
                 <Footer/>

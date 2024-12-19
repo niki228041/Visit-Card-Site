@@ -3,6 +3,8 @@ import "../../index.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
+import logo from "../../img/logo.svg"
+
 const Header =()=> {
   var [openMenu,setOpenMenu] = useState(false);
   const handleOpenMenu=()=>
@@ -21,10 +23,19 @@ const Header =()=> {
 
 
   return (
-    <div className="w-full bg-mainYellow flex-row flex place-content-between " >
-        <div className='bg-black w-full p-10 px-60'>
-            <span className=' text-white text-4xl font-monocode'>Nikita-Zigfrid Lopocz (Web Developer)</span>
+    <div className="w-full bg-black py-10   " >
+      <div className=' px-96 mx-40 flex '>
+        <div className='w-full'>
+            <div>
+              <span className=' text-white text-6xl font-monocode_semibold'>Nikita-Zigfrid Lopocz </span>
+            </div>
+
+            <div className='mt-2'>
+              <span className=' text-white text-xl '>Full Stack Developer</span>
+            </div>
         </div>
+        <img className='  h-7' src={logo} />
+      </div>
     </div>
   )
 }
